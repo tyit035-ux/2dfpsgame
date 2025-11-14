@@ -1,6 +1,6 @@
 <?php
 
-include("Common.php")
+include("Common.php");
 
 $link = dbConnect();
 
@@ -23,9 +23,9 @@ $real_hash = md5($name . $email . $password . $secretKey);
             $password = md5($password);
 
             $var = mysqli_query($link, "INSERT INTO `LoginSystemDB` (`name`, `email`, `password`, `IP`) VALUES 
-            ('".mysqli_real_escape_string($link, $name)"', '".mysqli_real_escape_string($link, $email)"',
-             '".mysqli_real_escape_string($link, $password)"', 
-             '".mysqli_real_escape_string($link, $IP)"' )");
+            ('".mysqli_real_escape_string($link, $name)."', '".mysqli_real_escape_string($link, $email)."',
+             '".mysqli_real_escape_string($link, $password)."', 
+             '".mysqli_real_escape_string($link, $IP)."' )");
 
              if($var){
                  die ("Done");
@@ -38,4 +38,5 @@ $real_hash = md5($name . $email . $password . $secretKey);
     }
 
     CloseConnection($link);
+
 ?>
