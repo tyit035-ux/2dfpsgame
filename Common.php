@@ -12,7 +12,7 @@ function dbConnect(){
     global $dbName;
     global $secretKey;
 
-    $link = new mysqli("pdb23.awardspace.net", "2624038_dimitar", "kaifk123", "2624038_dimitar")
+    $link = new mysqli("127.0.0.1", "unity2dfps", "kaifk123", "unity2dfps")
      or die("Connection failed. %s\n" . $link -> error);
 
      return $link; 
@@ -36,4 +36,5 @@ function CloseConnection($link){
 
 
 ?>
+
 
