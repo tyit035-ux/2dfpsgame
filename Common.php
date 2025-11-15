@@ -34,7 +34,4 @@ function CloseConnection($link){
     $link -> close();
 }
 
-
 ?>
-
-
