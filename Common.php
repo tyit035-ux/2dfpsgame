@@ -2,7 +2,7 @@
 
 $dbName = "unity2dfps";
 $dbHost = "127.0.0.1";
-$dbPass = "Xavimaestro66*";
+$dbPass = "kaifk123";
 $db = "unity2dfps";
 
 $secretKey = "123456789";
@@ -33,5 +33,6 @@ function fail($errMsg){
 function CloseConnection($link){
     $link -> close();
 }
+
 
 ?>
